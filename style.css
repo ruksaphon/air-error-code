@@ -1,19 +1,19 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  padding: 30px;
+  padding: 20px;
   background-color: #f9f9f9;
 }
 
 h1 {
   color: #0066cc;
   font-size: 2em;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 label {
   font-size: 1.2em;
-  margin-top: 30px;
+  margin-top: 20px;
   display: block;
 }
 
