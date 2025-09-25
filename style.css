@@ -1,16 +1,43 @@
+
 body {
   font-family: 'Segoe UI', sans-serif;
   padding: 20px;
   background-color: #f9f9f9;
 }
+
 h1 {
   color: #0066cc;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
-label, select, input, button {
+
+label {
+  font-size: 1.2em;
+  margin-top: 20px;
   display: block;
-  margin: 10px 0;
 }
+
+select, input[type="text"], button {
+  font-size: 1.5em;
+  padding: 12px 16px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #004999;
+}
+
 #result {
+  font-size: 1.2em;
   margin-top: 20px;
   padding: 10px;
   background-color: #e0f7fa;
