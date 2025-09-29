@@ -2,39 +2,37 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>YORK & HITACHI Error Code Checker</title>
+  <title>Air Error Code Checker</title>
   <link rel="stylesheet" href="style.css">
   <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
 </head>
 <body>
-  <h1>ตรวจสอบรหัส Error Code เครื่องปรับอากาศ</h1>
+  <h1>ตรวจสอบรหัส Error เครื่องปรับอากาศ</h1>
 
   <label for="brandSelect">เลือกแบรนด์:</label>
   <select id="brandSelect">
     <option value="">-- เลือกแบรนด์ --</option>
-    <option value="York">YORK</option>
-    <option value="Hitachi">HITACHI</option>
+    <option value="York">York</option>
+    <option value="Hitachi">Hitachi</option>
   </select>
 
   <label for="typeSelect">เลือกประเภทเครื่องปรับอากาศ:</label>
   <select id="typeSelect">
     <option value="">-- เลือกประเภท --</option>
-    <option value="Wall">แอร์ติดผนัง (Wall Mount)</option>
-    <option value="Cassette">แอร์ฝังฝ้า (Cassette)</option>
-    <option value="Ceiling">แอร์แขวนใต้ฝ้า (Ceiling)</option>
-    <option value="Floor">แอร์ตู้ตั้ง (Floor Standing)</option>
-    <option value="Ducted">แอร์ต่อท่อลม (Ducted)</option>
-    <option value="Concealed">แอร์เปลือย (Concealed)</option>
-    <option value="Portable">แอร์เคลื่อนที่ (Portable)</option>
+    <option value="Wall">แอร์ติดผนัง</option>
+    <option value="Ceiling">แอร์ฝังฝ้า</option>
+    <option value="Ducted">แอร์ดักท์</option>
+    <option value="Portable">แอร์เคลื่อนที่</option>
   </select>
 
   <label for="errorCodeInput">กรอกรหัส Error:</label>
-  <input type="text" id="errorCodeInput" placeholder="เช่น U4, E6, H11">
+  <input type="text" id="errorCodeInput" placeholder="เช่น E1, F3, P1">
 
   <button onclick="searchError()">ค้นหา</button>
 
   <div id="result"></div>
 
+  <script src="errorDatabase.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

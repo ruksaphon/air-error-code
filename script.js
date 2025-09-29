@@ -8,36 +8,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-const errorDatabase = {
-  Daikin: {
-    Wall: {
-      "U4": "ปัญหาการสื่อสารระหว่างหน่วยใน (Wall Type)",
-      "A1": "ปัญหาแผงวงจรหลัก (Wall Type)"
-    },
-    Ceiling: {
-      "U4": "ปัญหาการสื่อสารระหว่างหน่วยใน (Ceiling Type)"
-    }
-  },
-  Mitsubishi: {
-    Wall: {
-      "E6": "คอมเพรสเซอร์ไม่ทำงาน (Wall Type)",
-      "P8": "เซ็นเซอร์อุณหภูมิเสีย (Wall Type)"
-    },
-    Ceiling: {
-      "E6": "คอมเพรสเซอร์ไม่ทำงาน (Ceiling Type)"
-    }
-  },
-  Panasonic: {
-    Wall: {
-      "H11": "การสื่อสารผิดพลาด (Wall Type)",
-      "F90": "ปัญหาคอนโทรลบอร์ด (Wall Type)"
-    },
-    Ceiling: {
-      "H11": "การสื่อสารผิดพลาด (Ceiling Type)"
-    }
-  }
-};
-
 function searchError() {
   const brand = document.getElementById("brandSelect").value;
   const type = document.getElementById("typeSelect").value;
