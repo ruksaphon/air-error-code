@@ -30,10 +30,13 @@
 
   <label for="errorCodeInput">กรอกรหัส Error ที่แสดงบนเครื่องปรับอากาศหรือรีโมท (Input Error):</label>
   <input type="text" id="errorCodeInput" placeholder="เช่น E1, F3, P1">
-
+    <th>"หมายเหตุ1 : หากเป็นรุ่น Wall Mount HITACHI ให้นับจำนวนครั้งไฟกระพริบ และพิมพ์เฉพาะตัวเลขจำนวนครั้งที่นับได้"</th>
+    <th>"หมายเหตุ2 : หากเป็นรุ่น RPFC,RCI,RPI HITACHI ที่ไม่มีหน้าจอแสดงตัวเลข Error COde ให้นับจำนวนครั้งไฟกระพริบ 
+                    ไฟสีแดง=หลักสิบ, ไฟสีเขียว=หลักหน่วย และพิมพ์เฉพาะตัวเลขจำนวนครั้งที่นับได้"</th>
+    <th>"หมายเหตุ : หากค้นหาไม่พบ หรือต้องการสอบถามข้อมูลเพิ่มเติม สามารถแชทสอบถามกับเจ้าหน้าที่ได้โดยตรง"</th>
+  
   <button onclick="searchError()">ค้นหา</button>
-     <th>"หากเป็นรุ่น Wall Mount HITACHI ให้นับจำนวนครั้งไฟกระพริบ และพิมพ์เฉพาะตัวเลขจำนวนครั้งที่นับได้"</th>
-
+    
   <div id="result"></div>
   <table id="resultTable">
  
@@ -41,5 +44,11 @@
   <script src="errorDatabase.js"></script>
   <script src="script.js"></script>
 
+
+
+
+
+    
+<th>"Version 2025.09.01"</th>
 </body>
 </html>
