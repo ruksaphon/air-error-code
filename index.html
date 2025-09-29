@@ -1,37 +1,32 @@
 <!DOCTYPE html>
 <html lang="th">
 <head>
-  <meta charset="UTF-8">
-  <title>Air Error Code Checker</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="https://static.line-scdn.net/liff/edge/2/sdk.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Error Code Lookup</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>ตรวจสอบรหัส Error เครื่องปรับอากาศ</h1>
-
-  <label for="brandSelect">เลือกแบรนด์:</label>
-  <select id="brandSelect">
-    <option value="">-- เลือกแบรนด์ --</option>
-  </select>
-
-  <label for="typeSelect">เลือกประเภทเครื่องปรับอากาศ:</label>
-  <select id="typeSelect">
-    <option value="">-- เลือกประเภท --</option>
-  </select>
-
-  <label for="modelSelect">เลือกโมเดล:</label>
-  <select id="modelSelect">
-    <option value="">-- เลือกโมเดล --</option>
-  </select>
-
-  <label for="errorCodeInput">กรอกรหัส Error:</label>
-  <input type="text" id="errorCodeInput" placeholder="เช่น E1, F3, P1">
-
-  <button onclick="searchError()">ค้นหา</button>
-  <button onclick="contactSupport()">ติดต่อเจ้าหน้าที่</button>
-
-  <div id="result"></div>
-
+  <div class="container">
+    <h1>ค้นหา Error Code เครื่องปรับอากาศ</h1>
+    <div class="form-group">
+      <label for="brand">เลือกแบรนด์:</label>
+      <select id="brand"></select>
+    </div>
+    <div class="form-group">
+      <label for="type">เลือกประเภทเครื่อง:</label>
+      <select id="type"></select>
+    </div>
+    <div class="form-group">
+      <label for="errorCode">กรอก Error Code:</label>
+      <input type="text" id="errorCode" placeholder="เช่น E1, F3, 10" />
+      <button id="searchBtn">ค้นหา</button>
+    </div>
+    <div id="results"></div>
+    <div class="contact-section">
+      <a href="https://lin.ee/yourchatlink" target="_blank" class="contact-button">ติดต่อเจ้าหน้าที่</a>
+    </div>
+  </div>
   <script src="errorDatabase.js"></script>
   <script src="script.js"></script>
 </body>
